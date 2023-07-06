@@ -1,5 +1,6 @@
 {
   "name": "react-speech-recognition",
+  "src": "src/index.tsx",
   "homepage": "https://EvgenyaPankratova.github.io/react-speech-recognition",
   "version": "0.1.0",
   "private": true,
