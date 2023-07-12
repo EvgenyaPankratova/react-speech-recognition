@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-speech-recognition/static/css/main.bc0f043f.css",
-    "main.js": "/react-speech-recognition/static/js/main.225a2570.js",
+    "main.css": "/react-speech-recognition/static/css/main.f015bf71.css",
+    "main.js": "/react-speech-recognition/static/js/main.1344b717.js",
+    "static/media/1671473247.jpg": "/react-speech-recognition/static/media/1671473247.0e2cb492637d17cb4fb7.jpg",
     "index.html": "/react-speech-recognition/index.html",
-    "main.bc0f043f.css.map": "/react-speech-recognition/static/css/main.bc0f043f.css.map",
-    "main.225a2570.js.map": "/react-speech-recognition/static/js/main.225a2570.js.map"
+    "main.f015bf71.css.map": "/react-speech-recognition/static/css/main.f015bf71.css.map",
+    "main.1344b717.js.map": "/react-speech-recognition/static/js/main.1344b717.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc0f043f.css",
-    "static/js/main.225a2570.js"
+    "static/css/main.f015bf71.css",
+    "static/js/main.1344b717.js"
   ]
 }
