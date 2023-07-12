@@ -3,31 +3,34 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   background-color: rgb(189, 167, 197);
 }
 
 .container {
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .title {
   text-align: center;
+  font-size: 30px;
 }
 
 .main {
-  padding: 4rem 12rem;
+  padding: 5rem 15rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .box {
-  width: 20rem;
-  height: 17rem;
+  width: 34rem;
+  height: 30rem;
   border-radius: 5%;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
+  font-size: 18px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -39,13 +42,13 @@ body {
 }
 
 .microphoneIcon {
-  width: 3rem;
+  width: 4rem;
   cursor: pointer;
   z-index: 5;
 }
 
 .microphoneIconClicked {
-  width: 3rem;
+  width: 4rem;
   cursor: pointer;
   opacity: 50%;
   z-index: 5;
@@ -57,8 +60,8 @@ body {
   padding: 20px;
   border-radius: 10%;
   background: white;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   z-index: 1;
   cursor: pointer;
 }
@@ -99,7 +102,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  padding: 0.6rem;
+  padding: 1rem;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
@@ -110,10 +113,16 @@ body {
 }
 
 @media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
   body {
     font-size: 11px;
   }
-
+  .title {
+    font-size: 20px;
+  }
   .main {
     padding: 1rem;
     display: flex;
@@ -123,42 +132,51 @@ body {
   }
 
   .box {
-    width: 60vh;
-    height: 10rem;
-    font-size: 10px;
+    width: 80vw;
+    height: 12rem;
+    font-size: 11px;
     border-radius: 1rem;
     padding: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .microphoneIcon {
-    width: 2rem;
+    width: 3rem;
   }
 
   .microphoneIconClicked {
-    width: 2rem;
+    width: 3rem;
   }
 
   .pulse {
     padding: 7px;
     border-radius: 5%;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
   .box__button {
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    padding: 0.2rem;
+    padding: 0.5rem;
   }
 }
 @media (min-width: 501px) and (max-width: 720px) {
+  .container {
+    padding: 1rem;
+  }
   body {
     font-size: 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .container {
+    padding: 1rem;
   }
 
   .main {
@@ -170,8 +188,8 @@ body {
   }
 
   .box {
-    width: 70vh;
-    height: 12rem;
+    width: 80vw;
+    height: 15rem;
     font-size: 12px;
     border-radius: 1rem;
     padding: 0.8rem;
@@ -183,33 +201,38 @@ body {
   }
 
   .microphoneIcon {
-    width: 2rem;
+    width: 3rem;
   }
 
   .microphoneIconClicked {
-    width: 2rem;
+    width: 3rem;
   }
 
   .pulse {
     padding: 7px;
     border-radius: 5%;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
   .box__button {
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    padding: 0.2rem;
+    padding: 0.8rem;
   }
 }
 @media (min-width: 721px) and (max-width: 990px) {
-  body {
-    font-size: 14px;
+  .container {
+    padding: 0;
   }
-
+  body {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 22px;
+  }
   .main {
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,26 +240,86 @@ body {
 
   .box {
     margin-bottom: 2rem;
+    width: 35vw;
+    height: 15rem;
+    font-size: 12px;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
   }
 
   .microphoneIcon {
-    width: 2rem;
+    width: 2.5rem;
   }
 
   .microphoneIconClicked {
-    width: 2rem;
+    width: 2.5rem;
   }
 
   .pulse {
     padding: 7px;
     border-radius: 5%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .box__button {
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    padding: 0.2rem;
+    padding: 0.4rem;
+  }
+}
+@media (min-width: 991px) and (max-width: 1700px) {
+  .container {
+    padding: 0;
+  }
+  body {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .main {
+    padding: 4rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 2rem;
+    width: 30vw;
+    height: 20rem;
+    font-size: 14px;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .microphoneIcon {
+    width: 2.7rem;
+  }
+
+  .microphoneIconClicked {
+    width: 2.7rem;
+  }
+
+  .pulse {
+    padding: 7px;
+    border-radius: 5%;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .box__button {
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem;
   }
 }
