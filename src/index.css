@@ -4,7 +4,9 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  background-color: rgb(189, 167, 197);
+  background: url("../public/1671473247_kalix-club-p-oboi-na-telefon-krasivie-estetika-krasivo-1.jpg")
+    no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -15,6 +17,7 @@ body {
 .title {
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 
 .main {
@@ -39,6 +42,7 @@ body {
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   background: white;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .microphoneIcon {
@@ -107,6 +111,10 @@ body {
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   outline: 1px solid lightgray;
+}
+.box__button_active {
+  background-color: #6495ed;
+  color: white;
 }
 .box__result p {
   font-weight: bold;

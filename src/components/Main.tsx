@@ -1,11 +1,11 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
 
 interface MainProps {
-    isListening: boolean;
-    setIsListening: any;
-    handleSaveVoiceMessage: () => void;
-    message: string | null;
-    voiseMessageSaved: any[];
+  isListening: boolean;
+  setIsListening: any;
+  handleSaveVoiceMessage: () => void;
+  message: string | null;
+  voiseMessageSaved: any[];
 }
 
 const Main: FC<MainProps> = ({
@@ -14,22 +14,17 @@ const Main: FC<MainProps> = ({
   handleSaveVoiceMessage,
   message,
   voiseMessageSaved,
-
 }) => {
-
   const onClickMic = () => {
-    setIsListening((prevState: boolean) => !prevState)
-  }
+    setIsListening((prevState: boolean) => !prevState);
+  };
 
   return (
     <main className="main">
       <div>
         <div className="box">
           <div>Нажмите на иконку микрофона и скажите что-нибудь...</div>
-          <div
-            onClick={onClickMic}
-            className={isListening ? `pulse` : ''}
-          >
+          <div onClick={onClickMic} className={isListening ? `pulse` : ""}>
             <img
               className={
                 isListening ? `microphoneIconClicked` : `microphoneIcon`
@@ -41,7 +36,7 @@ const Main: FC<MainProps> = ({
           <button
             onClick={handleSaveVoiceMessage}
             disabled={!message}
-            className="box__button"
+            className={`box__button ${message ? "box__button_active" : null}`}
           >
             Преобразовать в текст
           </button>
